@@ -1,0 +1,19 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1753537131
+icon.svg::CompressedTexture2D::5619216610384096331::1753514523::1753537152::1::::<><><>0<>0<>c539beef804a9bd99f2b82261adc7917<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1753515923
+::res://Assets/Fonts/::1753515884
+::res://Assets/Imgs/::1753515892
+::res://Assets/Scenes/::1753537130
+draggable_file.gd::GDScript::7166859479684446529::1753524344::0::1::::<>RefCounted<><>0<>0<><>::
+draggable_file.tscn::PackedScene::-1::1753524488::0::1::::<><><>0<>0<><>::
+file_drop_zone.tscn::PackedScene::-1::1753524488::0::1::::<><><>0<>0<><>::
+test_file_drop.tscn::PackedScene::-1::1753524489::0::1::::<><><>0<>0<><>::
+::res://Assets/Scripts/::1753537133
+draggable_file.gd::GDScript::-1::1753524388::0::1::::<>Node2D<><>0<>0<><>::
+file_drop_zone.gd::GDScript::-1::1753524423::0::1::::<>Marker2D<><>0<>0<><>::
+::res://Assets/Sprites/::1753515915
+::res://Assets/UI Settings/::1753515923
+::res://gemastik-2025/::1753536024
+::res://test-gemastik2025/::1753536573
+README.md::TextFile::-1::1753536573::0::1::::<><><>0<>0<><>::

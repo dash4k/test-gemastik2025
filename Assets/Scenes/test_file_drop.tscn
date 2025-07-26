@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c73hg3wla5aj"]
+
+[ext_resource type="PackedScene" uid="uid://n5t8sufksp76" path="res://Assets/Scenes/draggable_file.tscn" id="1_jksgv"]
+[ext_resource type="PackedScene" uid="uid://djelj738ubniu" path="res://Assets/Scenes/file_drop_zone.tscn" id="2_qjgtm"]
+
+[sub_resource type="GDScript" id="GDScript_jksgv"]
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("GDScript_jksgv")
+
+[node name="file_drop_zone" parent="." instance=ExtResource("2_qjgtm")]
+position = Vector2(203, 271)
+
+[node name="file_drop_zone2" parent="." instance=ExtResource("2_qjgtm")]
+position = Vector2(763, 249)
+
+[node name="File" parent="." instance=ExtResource("1_jksgv")]
+position = Vector2(379, 121)

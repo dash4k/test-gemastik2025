@@ -1,0 +1,6 @@
+res://Assets/Scenes/draggable_file.tscn
+res://Assets/Scripts/draggable_file.gd
+res://Assets/Scripts/file_drop_zone.gd
+res://Assets/Scenes/file_drop_zone.tscn
+res://Assets/Scenes/test_file_drop.tscn
+res://Assets/Scenes/draggable_file.gd
