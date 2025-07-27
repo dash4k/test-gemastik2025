@@ -1,6 +1,9 @@
+res://Assets/Scenes/Prompt/key.tscn
+res://Assets/Scripts/Prompt/prompt.gd
+res://Assets/Scenes/Prompt/prompt.tscn
 res://Assets/Scenes/draggable_file.tscn
-res://Assets/Scripts/draggable_file.gd
-res://Assets/Scripts/file_drop_zone.gd
 res://Assets/Scenes/file_drop_zone.tscn
 res://Assets/Scenes/test_file_drop.tscn
-res://Assets/Scenes/draggable_file.gd
+res://Assets/Scenes/Rythm/arrow.tscn
+res://Assets/Scenes/Rythm/test.tscn
+res://Assets/Scripts/Prompt/key.gd

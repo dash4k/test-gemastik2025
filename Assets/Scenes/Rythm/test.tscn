@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bswfmvgldms21"]
+
+[ext_resource type="Script" uid="uid://ld4d2nmuqma7" path="res://Assets/Scripts/Rythm/test.gd" id="1_kk45k"]
+[ext_resource type="PackedScene" uid="uid://f7f5npvadex8" path="res://Assets/Scenes/Rythm/arrow.tscn" id="2_kk45k"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kk45k")
+
+[node name="ArrowDown" parent="." instance=ExtResource("2_kk45k")]
+position = Vector2(170, 166)

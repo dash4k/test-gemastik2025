@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://4hlk1aeqbwv0"]
+
+[ext_resource type="Script" uid="uid://cx34mw74co7nd" path="res://Assets/Scripts/Prompt/prompt.gd" id="1_5il8v"]
+[ext_resource type="PackedScene" uid="uid://8xce4ilij7kj" path="res://Assets/Scenes/Prompt/key.tscn" id="2_ssj8t"]
+
+[node name="Prompt" type="Node2D"]
+script = ExtResource("1_5il8v")
+key_scene = ExtResource("2_ssj8t")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 745.0
+offset_bottom = 141.0
+theme_override_constants/separation = 10

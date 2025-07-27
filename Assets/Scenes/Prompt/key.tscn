@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://8xce4ilij7kj"]
+
+[ext_resource type="Script" uid="uid://qjhtaik8cpoo" path="res://Assets/Scripts/Prompt/key.gd" id="1_e5050"]
+
+[node name="Key" type="Control"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_e5050")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 25.0
+offset_bottom = 26.0
+color = Color(0.44, 0.44, 0.44, 1)
+
+[node name="Label" type="Label" parent="Background"]
+offset_right = 25.0
+offset_bottom = 28.0
+theme_override_font_sizes/font_size = 20
+text = "W"
+horizontal_alignment = 3
+vertical_alignment = 3
