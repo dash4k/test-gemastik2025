@@ -1,6 +1,9 @@
-ColorRect
-Control
 HBoxContainer
+Panel
+Timer
+Control
+TextureRect
+ColorRect
 VBoxContainer
 Marker2D
 Label

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://br68njn0rctam"]
+
+[ext_resource type="Script" uid="uid://b5iuoxdtje250" path="res://Assets/Scripts/Photo/main.gd" id="1_xsudr"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xsudr")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
