@@ -1,24 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpjrcp3awijrf"]
+[gd_scene load_steps=3 format=3 uid="uid://dpjrcp3awijrf"]
 
 [ext_resource type="Texture2D" uid="uid://cmb8xae5sae0j" path="res://icon.svg" id="1_4sx6p"]
 [ext_resource type="Script" uid="uid://blx0vjyxfugcq" path="res://Assets/Scenes/Rythm/key_listener.gd" id="2_0akhk"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0akhk"]
-size = Vector2(126, 126)
-
-[node name="KeyListener" type="Area2D"]
-script = ExtResource("2_0akhk")
-
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(2, -2)
+[node name="KeyListener" type="Sprite2D"]
 texture = ExtResource("1_4sx6p")
+script = ExtResource("2_0akhk")
 
 [node name="RandomSpawnTimer" type="Timer" parent="."]
 one_shot = true
 autostart = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, -2)
-shape = SubResource("RectangleShape2D_0akhk")
 
 [connection signal="timeout" from="RandomSpawnTimer" to="." method="_on_random_spawn_timer_timeout"]

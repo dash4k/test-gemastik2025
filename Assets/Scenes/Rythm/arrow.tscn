@@ -1,33 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://f7f5npvadex8"]
+[gd_scene load_steps=3 format=3 uid="uid://f7f5npvadex8"]
 
 [ext_resource type="Script" uid="uid://4nu4ey7pcbto" path="res://Assets/Scripts/Rythm/arrow.gd" id="1_j04vr"]
 [ext_resource type="Texture2D" uid="uid://3evmqs4vuhrp" path="res://Assets/Imgs/Rythm/arrow_down.png" id="2_41o63"]
-[ext_resource type="Script" uid="uid://cw77856o2g047" path="res://Assets/Scenes/Rythm/collision_shape_2d.gd" id="3_41o63"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pixsr"]
-size = Vector2(19, 35)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_j04vr"]
-size = Vector2(35, 35)
 
 [node name="Arrow" type="Node2D"]
 script = ExtResource("1_j04vr")
 
 [node name="ArrowDown" type="Sprite2D" parent="."]
 texture = ExtResource("2_41o63")
-
-[node name="PerfectHitBox" type="Area2D" parent="ArrowDown"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowDown/PerfectHitBox"]
-position = Vector2(0.5, -0.5)
-shape = SubResource("RectangleShape2D_pixsr")
-
-[node name="GoodHitBox" type="Area2D" parent="ArrowDown"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ArrowDown/GoodHitBox"]
-position = Vector2(-0.5, -0.5)
-shape = SubResource("RectangleShape2D_j04vr")
-script = ExtResource("3_41o63")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
