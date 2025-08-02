@@ -17,7 +17,7 @@ var status := true
 @onready var key_container = $HBoxContainer
 
 func _ready():
-	current_prompt = generate_prompt(6)
+	current_prompt = generate_prompt(8)
 	current_index = 0
 	status = true
 	display_prompt()
@@ -57,12 +57,14 @@ func _input(event):
 			if status:
 				emit_signal("prompt_completed", true)
 			else:
-				if attempt < 3:
-					attempt += 1
-					await get_tree().create_timer(0.5).timeout
-					reset_prompt()
-				else:
-					emit_signal("prompt_completed", false)
+				#if attempt < 3:
+					#attempt += 1
+					#await get_tree().create_timer(0.5).timeout
+					#reset_prompt()
+				#else:
+					#emit_signal("prompt_completed", false)
+				await get_tree().create_timer(0.5).timeout
+				reset_prompt()
 
 func mark_key_correct(index):
 	var key_node = key_container.get_child(index)
@@ -73,7 +75,7 @@ func mark_key_incorrect(index):
 	key_node.incorrect()
 
 func reset_prompt():
-	current_prompt = generate_prompt(6)
+	current_prompt = generate_prompt(8)
 	current_index = 0
 	status = true
 	display_prompt()

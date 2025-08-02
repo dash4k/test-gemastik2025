@@ -1,13 +1,40 @@
-[gd_scene load_steps=3 format=3 uid="uid://4hlk1aeqbwv0"]
+[gd_scene load_steps=4 format=3 uid="uid://4hlk1aeqbwv0"]
 
 [ext_resource type="Script" uid="uid://cx34mw74co7nd" path="res://Assets/Scripts/Prompt/prompt.gd" id="1_5il8v"]
 [ext_resource type="PackedScene" uid="uid://8xce4ilij7kj" path="res://Assets/Scenes/Prompt/key.tscn" id="2_ssj8t"]
+[ext_resource type="FontFile" uid="uid://4rkwqto0l63a" path="res://Assets/Fonts/Lexend-Regular.ttf" id="3_5plko"]
 
 [node name="Prompt" type="Node2D"]
 script = ExtResource("1_5il8v")
 key_scene = ExtResource("2_ssj8t")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_right = 745.0
-offset_bottom = 141.0
-theme_override_constants/separation = 10
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -372.5
+offset_top = -70.5
+offset_right = 372.5
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 50
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -151.0
+offset_top = -177.0
+offset_right = 150.0
+offset_bottom = -137.0
+theme_override_fonts/normal_font = ExtResource("3_5plko")
+text = "Press the correct key sequence!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

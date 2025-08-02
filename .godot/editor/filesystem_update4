@@ -19,3 +19,8 @@ res://Assets/Scenes/Rythm/signals.tscn
 res://Assets/Scenes/Rythm/score_press_text.tscn
 res://Assets/Scenes/Rythm/score_press_text.gd
 res://Assets/Scenes/Rythm/rythm_signals.gd
+res://Assets/Scripts/Photo/main.gd
+res://Assets/Scripts/Prompt/key.gd
+res://Assets/Scripts/Prompt/prompt.gd
+res://Assets/Scripts/Rythm/rythm_signals.gd
+res://Assets/Scripts/Rythm/key_listener.gd

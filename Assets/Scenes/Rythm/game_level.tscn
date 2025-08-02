@@ -1,13 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://0gqstwg1sjy2"]
+[gd_scene load_steps=5 format=3 uid="uid://0gqstwg1sjy2"]
 
 [ext_resource type="PackedScene" uid="uid://dpjrcp3awijrf" path="res://Assets/Scenes/Rythm/key_listener.tscn" id="1_m5uqj"]
 [ext_resource type="PackedScene" uid="uid://c312dwmjvdiog" path="res://Assets/Scenes/Rythm/rythm_ui.tscn" id="2_2na62"]
+[ext_resource type="Texture2D" uid="uid://cf7wtbwxc73sl" path="res://Assets/Imgs/Rythm/bg.png" id="3_da3wk"]
+[ext_resource type="Texture2D" uid="uid://b6eoyllir81y2" path="res://Assets/Imgs/Rythm/Rectangle 29.png" id="4_jcqdn"]
 
 [node name="GameLevel" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="KeyListener" parent="." instance=ExtResource("1_m5uqj")]
-position = Vector2(475, 0)
+z_index = 5
+position = Vector2(475, 4.17233e-07)
+scale = Vector2(1, 0.966667)
 
 [node name="RythmUI" parent="." instance=ExtResource("2_2na62")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(0.499998, 0)
+scale = Vector2(2.30541, 1)
+texture = ExtResource("3_da3wk")
+
+[node name="Rectangle29" type="Sprite2D" parent="."]
+position = Vector2(0.499962, 0)
+scale = Vector2(2.28796, 1)
+texture = ExtResource("4_jcqdn")

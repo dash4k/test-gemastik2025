@@ -1,4 +1,3 @@
-# rythm_signals.gd
 extends Node
 
 signal IncrementScore(score_increment: int)

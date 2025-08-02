@@ -7,7 +7,8 @@ enum Direction { UP, DOWN, LEFT, RIGHT }
 
 #True if arrow has passed the key_listener
 var has_passed = false
-var pass_threshold = 475.0
+var pass_threshold = 520.0
+var arrow_direction = "ui_up"
 
 var init_position_x = -620
 var dir_map = {
@@ -45,10 +46,10 @@ func update_direction(direction: Direction):
 
 func Setup(target_y: float, direction_input):
 	global_position = Vector2(init_position_x, target_y)
+	arrow_direction = direction_input
 	direction = dir_map[direction_input]
 	update_direction(direction)
 	set_process(true)
-
 
 func _on_destroy_timer_timeout() -> void:
 	queue_free()
