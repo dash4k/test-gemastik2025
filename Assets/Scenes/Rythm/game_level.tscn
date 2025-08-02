@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://0gqstwg1sjy2"]
+[gd_scene load_steps=6 format=3 uid="uid://0gqstwg1sjy2"]
 
 [ext_resource type="PackedScene" uid="uid://dpjrcp3awijrf" path="res://Assets/Scenes/Rythm/key_listener.tscn" id="1_m5uqj"]
 [ext_resource type="PackedScene" uid="uid://c312dwmjvdiog" path="res://Assets/Scenes/Rythm/rythm_ui.tscn" id="2_2na62"]
 [ext_resource type="Texture2D" uid="uid://cf7wtbwxc73sl" path="res://Assets/Imgs/Rythm/bg.png" id="3_da3wk"]
 [ext_resource type="Texture2D" uid="uid://b6eoyllir81y2" path="res://Assets/Imgs/Rythm/Rectangle 29.png" id="4_jcqdn"]
+[ext_resource type="PackedScene" uid="uid://carj1iobk6f3o" path="res://Assets/Scenes/Rythm/level_editor.tscn" id="5_v37vh"]
 
 [node name="GameLevel" type="Node2D"]
 
@@ -25,3 +26,7 @@ texture = ExtResource("3_da3wk")
 position = Vector2(0.499962, 0)
 scale = Vector2(2.28796, 1)
 texture = ExtResource("4_jcqdn")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[node name="LevelEditor" parent="." instance=ExtResource("5_v37vh")]

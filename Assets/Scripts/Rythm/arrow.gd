@@ -3,11 +3,15 @@ extends Node2D
 enum Direction { UP, DOWN, LEFT, RIGHT }
 
 @export var direction: Direction = Direction.UP
-@export var scroll_speed: float = 6.5
+@export var scroll_speed: float = 450
 
 #True if arrow has passed the key_listener
 var has_passed = false
-var pass_threshold = 520.0
+var pass_threshold = 475.0
+
+var has_missed = false
+var miss_threshold = 530.0
+
 var arrow_direction = "ui_up"
 
 var init_position_x = -620
@@ -25,13 +29,14 @@ func _ready():
 	update_direction(direction)
 	
 func _process(delta: float) -> void:
-	global_position += Vector2(scroll_speed, 0)
+	global_position += Vector2(scroll_speed * delta, 0)
 	
 	#How long it takes for arrow to reach key_listener
 	if global_position.x > pass_threshold and not $Timer.is_stopped():
 		#print($Timer.wait_time - $Timer.time_left)
-		$Timer.stop()
 		has_passed = true
+	if global_position.x > miss_threshold and not $Timer.is_stopped():
+		has_missed = true
 	
 func update_direction(direction: Direction):
 	match  direction:

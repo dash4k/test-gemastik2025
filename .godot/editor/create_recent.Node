@@ -1,3 +1,5 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
 Panel
 AnimationPlayer
 RichTextLabel
@@ -9,6 +11,4 @@ Control
 CanvasLayer
 Timer
 Node2D
-AudioStreamPlayer
 Label
-HBoxContainer
