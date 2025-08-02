@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="gemastik"
-run/main_scene="uid://br68njn0rctam"
+run/main_scene="uid://0gqstwg1sjy2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+RythmSignals="*res://Assets/Scenes/Rythm/rythm_signals.gd"
 
 [input]
 

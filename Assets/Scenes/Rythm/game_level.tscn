@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://0gqstwg1sjy2"]
+
+[ext_resource type="PackedScene" uid="uid://dpjrcp3awijrf" path="res://Assets/Scenes/Rythm/key_listener.tscn" id="1_m5uqj"]
+[ext_resource type="PackedScene" uid="uid://c312dwmjvdiog" path="res://Assets/Scenes/Rythm/rythm_ui.tscn" id="2_2na62"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="KeyListener" parent="." instance=ExtResource("1_m5uqj")]
+position = Vector2(475, 0)
+
+[node name="RythmUI" parent="." instance=ExtResource("2_2na62")]
